@@ -10,7 +10,11 @@ Train the contextual symbolic policy with:
 
     python  main.py  --config configs/xxx.config   --spls 0.25 --target_ratio 0.002  --arch_index 0  --hard_epoch 25  --seed 0
 
-Then you can get the symbolic expression with CSP/sym.py.  The average count of all selected paths and paths selected by at least ninety perce can be calculated with CSP/mask_matrix.py
+You can tune the hyper-parameters by editing main.py or using the argparse.  
+
+You can also get the average count of all selected paths and paths selected by at least ninety percent with CSP/mask_matrix.py
+
+Then you can extract the discovered symbolic policy with CSP/sym.py (Please make sure the symbolic network is sparse enough before this). 
 
 
 
@@ -25,7 +29,7 @@ Train the symbolic policy with:
 
 You can tune the hyper-parameters by editing sac_symbolic_v1.py or using the argparse.
 
-
+Then you can extract the discovered symbolic policy with ESPL/sym.py (Please make sure the symbolic network is sparse enough before this). 
 
 ## Example：
 
