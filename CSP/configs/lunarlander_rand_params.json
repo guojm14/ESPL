@@ -1,0 +1,24 @@
+{
+    "env_name": "lunarlander-rand-params",
+    "n_train_tasks": 40,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 50
+    }
+    ,
+    "algo_params": {
+        "use_next_obs_in_context": true,
+        "meta_batch": 10,
+        "num_initial_steps": 4000,
+        "num_steps_prior": 2000,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 3000,
+        "num_train_steps_per_itr": 8000,
+        "num_evals": 2,
+        "max_path_length":1000,
+        "num_steps_per_eval": 3000,
+        "num_exp_traj_eval": 2,
+        "embedding_batch_size": 100,
+        "embedding_mini_batch_size": 100 
+    }
+}
